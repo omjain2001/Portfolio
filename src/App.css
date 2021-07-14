@@ -1,38 +1,497 @@
-.App {
+.custom-nav {
+  color: #012438;
+  box-shadow: 0px 2px 10px #001722 !important;
+}
+
+.custom-nav-link {
+  transition: all ease 0.8s;
+  position: relative;
+}
+
+.custom-nav-link:hover {
+  color: #00bfa6 !important;
+}
+
+.custom-nav-link:after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #00bfa6;
+  color: transparent;
+  margin: auto;
+  content: ".";
+}
+
+.custom-nav-link:hover:after {
+  width: 100%;
+  transition: all 0.8s;
+}
+
+.custom-active-nav-link {
+  color: #00bfa6;
+}
+
+.custom-active-nav-link:after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #00bfa6;
+  color: transparent;
+  margin: auto;
+  content: ".";
+}
+
+.custom-typing {
+  background-color: #024162;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.homePage-icon {
+  height: 250px;
+  width: 100%;
+}
+
+.custom-header-divider {
+  height: 2px;
+  background-color: #00bfa6;
+  width: 50%;
+}
+
+.domain-title {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #024162;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 20px #012438;
+}
+
+/* .icons {
+  display: inline-block;
+  padding: 5px;
+  margin: 5px;
+  background-color: #024162;
+  border-radius: 10px;
   text-align: center;
+  box-shadow: 1px 1px 5px #012f47;
+} */
+
+.tooltip div.tooltip-inner {
+  background-color: #012f47 !important;
+  color: #fff !important;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.tooltip.top .tooltip-arrow {
+  border-top-color: #012f47 !important;
+  background-color: #012f47 !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.tooltip div.arrow::before {
+  border-bottom-color: #012f47 !important;
+  color: #fff !important;
+}
+
+.custom-card {
+  background-color: #024162 !important;
+  box-shadow: 5px 5px 20px #012438;
+}
+
+/* Education */
+.custom-education-card {
+  height: 500px !important;
+}
+
+/* Projects */
+.custom-project-desc {
+  max-height: 200px;
+}
+
+.custom-project-card {
+  height: 600px !important;
+}
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+  button {
+    font-size: 18px !important;
+  }
+
+  .homePage-icon {
+    height: 300px !important;
+  }
+
+  #btn-back-to-top {
+    font-size: 2.8rem !important;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .homePage-icon {
+    height: 250px !important;
+  }
+
+  .project-img {
+    height: 150px;
+  }
+
+  .custom-nav-link {
+    font-size: 15px;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .bio {
+    font-size: 18px;
+  }
+
+  .custom-lottie-animation {
+    height: 50% !important;
+  }
+
+  .custom-edu-card {
+    width: 100% !important;
+  }
+
+  /* .custom-achievement-img {
+    padding-bottom: 2rem;
+  } */
+
+  .title-img {
+    height: auto;
+    width: 100%;
+  }
+
+  .experience-card-logo {
+    width: 25%;
+    height: 10%;
+  }
+
+  .contact-title {
+    font-size: 1.5rem;
+  }
+
+  .contact-body {
+    font-size: 1.2rem;
+  }
+
+  .domain {
+    margin-bottom: 12rem !important;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .homePage-icon {
+    height: 200px !important;
   }
-  to {
-    transform: rotate(360deg);
+
+  .name {
+    font-size: 45px;
   }
+
+  .greeting {
+    font-size: 20px !important;
+  }
+
+  .custom-typing {
+    font-size: 18px;
+  }
+
+  button {
+    font-size: 18px !important;
+  }
+
+  .title-img {
+    height: auto;
+    width: 80%;
+  }
+
+  .title-container {
+    margin-top: 3rem !important;
+  }
+
+  .project-img {
+    height: 10%;
+  }
+}
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .homePage-icon {
+    height: 150px !important;
+  }
+  .custom-typing {
+    font-size: 1rem;
+  }
+
+  .name {
+    font-size: 2.5rem;
+  }
+
+  .icons {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .bio {
+    font-size: 1rem;
+  }
+
+  .quotes {
+    font-size: 6rem !important ;
+  }
+
+  .domain-title {
+    font-size: 1.1rem;
+  }
+
+  .domain-subtitle {
+    font-size: 1rem !important;
+  }
+
+  .title-img {
+    height: auto;
+    width: 60%;
+  }
+
+  .custom-edu-card .card-header h5 {
+    font-size: 1.1rem !important;
+  }
+
+  .title-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .experience-card {
+    margin-right: 1rem !important;
+    margin-left: 1rem !important;
+  }
+
+  .contact-title {
+    font-size: 1.3rem;
+  }
+
+  .contact-body {
+    font-size: 1.1rem;
+  }
+
+  .exp-company,
+  .exp-location {
+    font-size: 1rem !important;
+    align-self: flex-start;
+  }
+
+  .exp-duration {
+    font-size: 1rem !important;
+    align-self: flex-start;
+    margin-top: 15px;
+  }
+
+  #btn-back-to-top {
+    font-size: 2rem !important;
+  }
+}
+
+@media (max-width: 399.98px) {
+  .custom-edu-card .card-header h5 {
+    font-size: 1rem !important;
+  }
+
+  .custom-edu-card .card-body h6 {
+    font-size: 1rem !important;
+  }
+
+  button {
+    font-size: 0.9rem !important;
+  }
+
+  .title-img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .achievement-title,
+  .experience-title {
+    font-size: 1.1rem;
+  }
+
+  .exp-company,
+  .exp-location {
+    font-size: 14px !important;
+  }
+
+  .exp-duration {
+    font-size: 14px !important;
+    margin-top: 15px;
+  }
+
+  .contact-title {
+    font-size: 1rem;
+  }
+
+  .contact-body {
+    font-size: 0.9rem;
+  }
+
+  .project-title {
+    font-size: 1.1rem !important;
+  }
+
+  .project-desc {
+    font-size: 0.9rem;
+  }
+
+  .icons {
+    height: 1.5rem;
+    width: 1.6rem;
+  }
+}
+
+@media (max-width: 299.98px) {
+  .homePage-icon {
+    height: 150px !important;
+  }
+  .custom-typing {
+    font-size: 1rem;
+  }
+
+  .name {
+    font-size: 2.5rem;
+  }
+
+  .icons {
+    height: 1.6rem;
+    width: 1.6rem;
+  }
+
+  .bio {
+    font-size: 0.9rem;
+  }
+
+  .quotes {
+    font-size: 5.2rem !important ;
+  }
+
+  .quotes:last-child {
+    margin-top: -25px;
+  }
+
+  .domain-title {
+    font-size: 0.9rem;
+  }
+
+  .domain-subtitle {
+    font-size: 0.8rem !important;
+  }
+
+  .domain-header {
+    font-size: 1.5rem !important;
+  }
+
+  .title-img {
+    width: 80%;
+  }
+
+  .title-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .edu-container {
+    margin-top: 20px !important;
+  }
+
+  .custom-edu-card .card-header h5 {
+    font-size: 0.8rem !important;
+  }
+
+  .custom-edu-card .card-body h6,
+  .custom-edu-card .card-body span {
+    font-size: 0.7rem !important;
+  }
+
+  .achievement-card-img {
+    height: 60px;
+  }
+
+  .achievement-title,
+  .experience-title {
+    font-size: 0.95rem;
+  }
+
+  .achievement-desc {
+    font-size: 0.8rem;
+  }
+
+  .experience-card-logo {
+    width: 50%;
+  }
+
+  .exp-company,
+  .exp-location {
+    font-size: 12px !important;
+  }
+
+  .exp-duration {
+    font-size: 12px !important;
+    margin-top: 15px;
+  }
+
+  .exp-body {
+    font-size: 13px;
+  }
+
+  .project-col {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+  }
+
+  .project-title {
+    font-size: 1rem !important;
+  }
+
+  .project-desc {
+    font-size: 0.8rem;
+  }
+
+  .contact-title {
+    font-size: 0.9rem;
+  }
+
+  .contact-body {
+    font-size: 0.8rem;
+  }
+
+  button {
+    font-size: 0.8rem !important;
+  }
+}
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  font-size: 3rem;
+  color: #00bfa6;
+  opacity: 0.5;
+}
+
+#btn-back-to-top:hover {
+  transition: all ease 0.5s;
+  opacity: 1;
+  cursor: pointer;
 }
