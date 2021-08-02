@@ -56,6 +56,7 @@ import ContactInfo from "../components/ContactInfo";
 
 import Typed from "typed.js";
 import ParticlesBackground from "../components/ParticlesBackground";
+import ScrollTop from "../components/ScrollTop";
 
 const whatIDo = {
   webDev: {
@@ -269,7 +270,7 @@ const Home = () => {
               ))}
             </div>
             <a
-              href="https://drive.google.com/file/d/1Ba4V0SnnOc1Xg2CTbWxwCItvRANIZbqd/view?usp=sharing"
+              href="https://drive.google.com/file/d/1xi1LhiVP_foBMHyUREHV8S0RlYwjAqxz/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >
@@ -319,6 +320,7 @@ const Home = () => {
           />
         ))}
       </div>
+      <ScrollTop />
     </div>
   );
 };

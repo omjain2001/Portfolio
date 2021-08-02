@@ -25,7 +25,7 @@ function App() {
         <Route exact path="/project" component={Project} />
         <Route exact path="/contact" component={Contact} />
       </Switch>
-      <ScrollTop />
+      {/* <ScrollTop /> */}
     </BrowserRouter>
   );
 }
