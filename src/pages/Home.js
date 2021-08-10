@@ -157,12 +157,12 @@ const DomainInfo = ({
   return (
     <div
       className={`row d-flex ${
-        index % 2 === 0 ? "flex-column-reverse" : ""
+        index % 2 === 0 ? "flex-column-reverse px-0" : ""
       } flex-lg-row justify-content-center my-5 align-items-center`}
     >
       {index % 2 !== 0 && (
         <div
-          className="col-lg-6 d-flex align-items-center custom-lottie-animation"
+          className="col-lg-6 d-flex align-items-center custom-lottie-animation px-0"
           data-aos="fade-right"
           data-aos-duration="1000"
         >
@@ -173,7 +173,7 @@ const DomainInfo = ({
         </div>
       )}
       <div
-        className="col-lg-6 d-flex flex-column align-items-center justify-content-center"
+        className="col-lg-6 d-flex flex-column align-items-center justify-content-center px-0"
         data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
         data-aos-duration="1000"
       >
@@ -204,7 +204,7 @@ const DomainInfo = ({
       </div>
       {index % 2 === 0 && (
         <div
-          className="col-lg-6 d-flex align-items-center"
+          className="col-lg-6 d-flex align-items-center px-0"
           data-aos="fade-left"
           data-aos-duration="1000"
         >
@@ -320,7 +320,7 @@ const Home = () => {
           />
         ))}
       </div>
-      <ScrollTop />
+      {/* <ScrollTop /> */}
     </div>
   );
 };
