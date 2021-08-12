@@ -1,6 +1,6 @@
 import React from "react";
 import { COLORS } from "../COLORS";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/OJ_logo.svg";
 
 const NavItem = ({ link, label }) => {
@@ -12,6 +12,11 @@ const NavItem = ({ link, label }) => {
         className="nav-link custom-nav-link pb-2"
         style={{ textDecoration: "none", color: "#fff" }}
         activeClassName="custom-active-nav-link"
+        // data-toggle="collapse"
+        // data-target="#navbarSupportedContent"
+        // aria-controls="navbarSupportedContent"
+        // aria-expanded="false"
+        // aria-label="Toggle navigation"
       >
         {label}
       </NavLink>
@@ -43,13 +48,16 @@ const Navbar = () => {
         >
           OJ
         </span> */}
-        <img
-          src={logo}
-          height="50"
-          width="50"
-          style={{ borderRadius: 25 }}
-          alt="Logo"
-        />
+        <Link exact to="/">
+          <img
+            src={logo}
+            height="50"
+            width="50"
+            style={{ borderRadius: 25 }}
+            alt="Logo"
+            className="logo"
+          />
+        </Link>
         <button
           class="navbar-toggler"
           type="button"
@@ -59,7 +67,7 @@ const Navbar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon navbar-toggle-btn"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="nav navbar-nav ml-auto ">

@@ -19,6 +19,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { COLORS } from "../COLORS";
 import ParticlesBackground from "../components/ParticlesBackground";
+import ScrollTop from "../components/ScrollTop";
 
 const educationList = [
   {
@@ -28,13 +29,13 @@ const educationList = [
     score: "GPA - 9.34",
   },
   {
-    degree: "HSC",
+    degree: "Higher Secondary Certificate (HSC)",
     university: "Swami Vivekanand junior college",
     location: "Jalgaon, India",
     score: "Score - 90.77%",
   },
   {
-    degree: "SSC",
+    degree: "Secondary School Certificate (SSC)",
     university: "St. Teresa’s Convent Higher Secondary School",
     location: "Jalgaon, India",
     score: "Score - 96.00%",
@@ -77,7 +78,9 @@ const EducationCard = ({ degree, university, location, score }) => {
       data-aos-duration="1000"
     >
       <div className="card-header text-center">
-        <h5 className="card-title mb-0 font-weight-bold">{degree}</h5>
+        <h5 className="card-title mb-0 font-weight-bold education-degree">
+          {degree}
+        </h5>
       </div>
       <div className="card-body">
         <div className="d-flex justify-content-between flex-wrap">
@@ -87,7 +90,7 @@ const EducationCard = ({ degree, university, location, score }) => {
               style={{ color: COLORS.button, marginRight: 10 }}
               size="1x"
             />
-            <h6 className="mb-0 edu-info">{university}</h6>
+            <h6 className="mb-0 lead edu-info">{university}</h6>
           </div>
           <div className="d-flex align-items-center my-1">
             <FontAwesomeIcon
@@ -95,7 +98,7 @@ const EducationCard = ({ degree, university, location, score }) => {
               style={{ color: "#EA4335", marginRight: 10 }}
               size="1x"
             />
-            <span className="edu-info">{location}</span>
+            <span className="lead edu-info">{location}</span>
           </div>
         </div>
         <div className="d-flex align-items-center mt-2">
@@ -104,7 +107,7 @@ const EducationCard = ({ degree, university, location, score }) => {
             style={{ color: "#FFD700", marginRight: 10 }}
             size="1x"
           />
-          <h6 className="mb-0 edu-info">{score}</h6>
+          <h6 className="mb-0 lead edu-info">{score}</h6>
         </div>
       </div>
     </div>
@@ -137,7 +140,7 @@ const AchievementCard = ({
           <h5 className="card-title text-center font-weight-bold achievement-title">
             {title}
           </h5>
-          <p className="card-text mt-4 text-justify achievement-desc">
+          <p className="card-text mt-4 text-justify lead achievement-desc">
             {description}
           </p>
           {/* <a
@@ -167,6 +170,7 @@ const AchievementCard = ({
 const Education = () => {
   return (
     <div className="container">
+      <ScrollTop />
       <div className="row d-flex flex-column-reverse flex-md-row justify-content-around align-items-center my-5">
         <div className="col-md-6 text-center">
           <div
@@ -174,7 +178,7 @@ const Education = () => {
             data-aos="zoom-in"
             data-aos-duration="1000"
           >
-            <h1 className="display-5">Education</h1>
+            <h1 className="display-5 title">Education</h1>
             <div className="custom-header-divider" />
           </div>
         </div>
@@ -186,7 +190,7 @@ const Education = () => {
           <img
             src={graduationSVG}
             alt="Graduation"
-            height="300"
+            height="400"
             width="80%"
             className="title-img"
           />
@@ -223,7 +227,7 @@ const Education = () => {
         </div>
         <div className="col-md-6 text-center" data-aos="fade-left">
           <div className="d-inline-flex flex-column align-items-center title-container">
-            <h1 className="display-5">Achievements</h1>
+            <h1 className="display-5 title">Achievements</h1>
             <div className="custom-header-divider" />
           </div>
         </div>
@@ -240,6 +244,7 @@ const Education = () => {
           />
         ))}
       </div>
+      <ScrollTop />
     </div>
   );
 };

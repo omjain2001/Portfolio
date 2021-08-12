@@ -5,13 +5,29 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #002f47;
   color: #fff;
+  overflow-y: hidden;
+  scrollbar-width: 5px;
+  scrollbar-color: #00bfa6;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #002f47;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #00bfa6;
 }
 
 button {
   background-color: #00bfa6;
   color: #002f47;
   padding: 5px;
-  font-size: 15px !important;
+  font-size: 18px !important;
   font-weight: bold !important;
 }
 

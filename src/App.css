@@ -55,7 +55,7 @@
 }
 
 .homePage-icon {
-  height: 250px;
+  height: 300px;
   width: 100%;
 }
 
@@ -113,6 +113,22 @@
   height: 500px !important;
 }
 
+.edu-info {
+  font-size: 1.1rem;
+  letter-spacing: 0.2px;
+}
+
+.achievement-desc {
+  letter-spacing: 0.3px;
+  font-size: 1.1rem;
+}
+
+/* Experience */
+.exp-body {
+  letter-spacing: 0.3px;
+  font-size: 1.1rem !important;
+}
+
 /* Projects */
 .custom-project-desc {
   max-height: 200px;
@@ -122,25 +138,28 @@
   height: 600px !important;
 }
 
+.project-desc {
+  font-size: 1.1rem;
+  letter-spacing: 0.3px;
+}
+
 html,
 body {
   overflow-x: hidden !important;
 }
 
+#btn-back-to-top {
+  z-index: 3000;
+  display: inline-block !important;
+  font-size: 2.8rem !important;
+}
+
 /* // X-Large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
-  html,
+  /* html,
   body {
     overflow-x: hidden !important;
-  }
-
-  button {
-    font-size: 18px !important;
-  }
-
-  .homePage-icon {
-    height: 300px !important;
-  }
+  } */
 
   #btn-back-to-top {
     font-size: 2.8rem !important;
@@ -149,12 +168,80 @@ body {
 
 /* // Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
+  .homepage-row {
+    margin-top: 60px !important;
+  }
+
   .homePage-icon {
-    height: 250px !important;
+    height: 220px !important;
+  }
+
+  .greeting {
+    font-size: 25px !important;
+  }
+
+  .name {
+    font-size: 50px;
+  }
+
+  .custom-typing {
+    font-size: 16px;
+  }
+
+  .bio {
+    font-size: 18px;
+  }
+
+  .icons {
+    height: 2.2rem;
+    width: 2.2rem;
+  }
+
+  .edu-info {
+    font-size: 1rem;
+  }
+
+  .achievement-card-img {
+    height: 70px;
+  }
+
+  .achievement-title,
+  .experience-title {
+    font-size: 1.1rem;
+  }
+
+  button {
+    font-size: 16px !important;
+  }
+
+  .achievement-desc,
+  .exp-body {
+    font-size: 1rem !important;
+  }
+
+  .title-img {
+    height: 320px;
   }
 
   .project-img {
     height: 150px;
+  }
+
+  .project-desc {
+    font-size: 1rem;
+  }
+
+  .project-icons .icons {
+    height: 2rem !important;
+    width: 2rem !important;
+  }
+
+  .contact-title {
+    font-size: 1.3rem;
+  }
+
+  .contact-body {
+    font-size: 1.1rem;
   }
 
   .custom-nav-link {
@@ -164,25 +251,36 @@ body {
 
 /* // Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-  .bio {
-    font-size: 18px;
+  .homepage-row {
+    margin-top: 10px !important;
+  }
+
+  .custom-typing {
+    font-size: 1.2rem;
   }
 
   .custom-lottie-animation {
-    height: 50% !important;
+    width: 80% !important;
   }
 
   .custom-edu-card {
     width: 100% !important;
   }
 
+  .title {
+    font-size: 2.2rem;
+  }
+
   /* .custom-achievement-img {
     padding-bottom: 2rem;
   } */
 
-  .title-img {
-    height: auto;
-    width: 100%;
+  .contact-title {
+    font-size: 1.2rem;
+  }
+
+  .contact-body {
+    font-size: 1rem;
   }
 
   .experience-card-logo {
@@ -190,12 +288,8 @@ body {
     height: 10%;
   }
 
-  .contact-title {
-    font-size: 1.5rem;
-  }
-
-  .contact-body {
-    font-size: 1.2rem;
+  .education-degree {
+    font-size: 1.1rem !important;
   }
 
   .domain {
@@ -209,16 +303,8 @@ body {
     height: 200px !important;
   }
 
-  .name {
-    font-size: 45px;
-  }
-
-  .greeting {
-    font-size: 20px !important;
-  }
-
-  .custom-typing {
-    font-size: 18px;
+  .title-img {
+    height: 250px;
   }
 
   button {
@@ -227,7 +313,7 @@ body {
 
   .title-img {
     height: auto;
-    width: 80%;
+    width: 60%;
   }
 
   .title-container {
@@ -273,11 +359,6 @@ body {
     font-size: 1rem !important;
   }
 
-  .title-img {
-    height: auto;
-    width: 60%;
-  }
-
   .custom-edu-card .card-header h5 {
     font-size: 1.1rem !important;
   }
@@ -317,11 +398,47 @@ body {
 }
 
 @media (max-width: 399.98px) {
-  .custom-edu-card .card-header h5 {
-    font-size: 1rem !important;
+  .logo {
+    height: 40px;
+    width: 40px;
   }
 
-  .custom-edu-card .card-body h6 {
+  .navbar-toggle-btn {
+    height: 1.2rem;
+    width: 1.2rem;
+  }
+
+  .custom-nav-link {
+    font-size: 0.8rem !important;
+  }
+
+  .bio {
+    font-size: 0.92rem;
+    letter-spacing: 0.3px;
+  }
+
+  .quotes {
+    font-size: 5rem !important;
+  }
+
+  .upquote {
+    margin-bottom: 20px !important;
+  }
+
+  .domain-header {
+    font-size: 1.5rem;
+  }
+
+  .edu-info {
+    font-size: 0.9rem !important;
+  }
+
+  .achievement-desc,
+  .project-desc {
+    font-size: 0.9rem !important;
+  }
+
+  .custom-edu-card .card-header h5 {
     font-size: 1rem !important;
   }
 
@@ -335,7 +452,9 @@ body {
   }
 
   .achievement-title,
-  .experience-title {
+  .experience-title,
+  .project-title,
+  .contact-title {
     font-size: 1.1rem;
   }
 
@@ -349,25 +468,61 @@ body {
     margin-top: 15px;
   }
 
-  .contact-title {
+  .project-icons .icons {
+    height: 1.7rem !important;
+    width: 1.7rem !important;
+  }
+
+  .domain-title {
     font-size: 1rem;
   }
 
   .contact-body {
     font-size: 0.9rem;
   }
+}
 
-  .project-title {
-    font-size: 1.1rem !important;
+@media (max-width: 320.98px) {
+  .title-img {
+    height: 150px;
   }
 
-  .project-desc {
+  .title {
+    font-size: 1.5rem !important;
+  }
+
+  .domain-title {
     font-size: 0.9rem;
   }
 
-  .icons {
-    height: 1.5rem;
-    width: 1.6rem;
+  .custom-edu-card .card-header h5 {
+    font-size: 0.9rem !important;
+  }
+
+  .edu-info {
+    font-size: 0.8rem !important;
+  }
+
+  .experience-card-logo {
+    width: 50%;
+    height: 20%;
+  }
+
+  .experience-title {
+    font-size: 1rem !important;
+  }
+  .exp-body {
+    font-size: 0.9rem !important;
+  }
+
+  .exp-company,
+  .exp-location,
+  .exp-duration {
+    font-size: 12px !important;
+  }
+
+  #btn-back-to-top {
+    font-size: 1.5rem !important;
   }
 }
 
@@ -375,37 +530,38 @@ body {
   .homePage-icon {
     height: 150px !important;
   }
+
   .custom-typing {
-    font-size: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .greeting {
+    font-size: 1.2rem !important;
   }
 
   .name {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .icons {
-    height: 1.6rem;
-    width: 1.6rem;
+    height: 1.7rem;
+    width: 1.7rem;
   }
 
   .bio {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
 
-  .quotes {
-    font-size: 5.2rem !important ;
-  }
-
-  .quotes:last-child {
-    margin-top: -25px;
-  }
-
-  .domain-title {
-    font-size: 0.9rem;
+  .domain {
+    margin-bottom: 4rem !important;
   }
 
   .domain-subtitle {
-    font-size: 0.8rem !important;
+    font-size: 0.9rem !important;
+  }
+
+  .domain-title {
+    font-size: 0.8rem;
   }
 
   .domain-header {
@@ -416,21 +572,17 @@ body {
     width: 80%;
   }
 
-  .title-container h1 {
-    font-size: 1.5rem;
-  }
-
   .edu-container {
     margin-top: 20px !important;
   }
 
   .custom-edu-card .card-header h5 {
-    font-size: 0.8rem !important;
+    font-size: 0.85rem !important;
   }
 
   .custom-edu-card .card-body h6,
   .custom-edu-card .card-body span {
-    font-size: 0.7rem !important;
+    font-size: 0.8rem !important;
   }
 
   .achievement-card-img {
@@ -439,29 +591,35 @@ body {
 
   .achievement-title,
   .experience-title {
-    font-size: 0.95rem;
+    font-size: 0.8rem !important;
   }
 
-  .achievement-desc {
-    font-size: 0.8rem;
+  .achievement-desc,
+  .project-desc {
+    font-size: 0.7rem !important;
   }
 
-  .experience-card-logo {
+  .achievement-card-img {
+    height: 50px;
+  }
+
+  /* .experience-card-logo {
     width: 50%;
-  }
+  } */
 
   .exp-company,
-  .exp-location {
-    font-size: 12px !important;
-  }
-
+  .exp-location,
   .exp-duration {
-    font-size: 12px !important;
-    margin-top: 15px;
+    font-size: 10px !important;
   }
 
   .exp-body {
-    font-size: 13px;
+    font-size: 11px !important;
+  }
+
+  .project-icons .icons {
+    height: 1.5rem !important;
+    width: 1.5rem !important;
   }
 
   .project-col {
@@ -486,7 +644,7 @@ body {
   }
 
   button {
-    font-size: 0.8rem !important;
+    font-size: 0.75rem !important;
   }
 }
 
@@ -494,7 +652,7 @@ body {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  display: none;
+  display: inline-block;
   font-size: 3rem;
   color: #00bfa6;
   opacity: 0.5;

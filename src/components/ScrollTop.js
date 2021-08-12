@@ -1,8 +1,23 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowAltCircleUp } from "@fortawesome/free-solid-svg-icons";
-import React from "react";
+import React, { useState } from "react";
 
 const ScrollTop = () => {
+  const [visible, setVisible] = useState(false);
+
+  window.onscroll = () => {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      console.log("Visible");
+      setVisible(true);
+    } else {
+      console.log("Not Visible");
+      setVisible(false);
+    }
+  };
+
   const handleClick = (e) => {
     e.preventDefault();
     document.body.scrollTop = 0;
@@ -13,9 +28,11 @@ const ScrollTop = () => {
   };
 
   return (
-    <div id="btn-back-to-top" onClick={handleClick}>
-      <FontAwesomeIcon icon={faArrowAltCircleUp} size="1x" />
-    </div>
+    visible && (
+      <div id="btn-back-to-top" onClick={handleClick}>
+        <FontAwesomeIcon icon={faArrowAltCircleUp} size="1x" />
+      </div>
+    )
   );
 };
 

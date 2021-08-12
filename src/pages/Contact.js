@@ -5,6 +5,7 @@ import { contactEnvelopSVG, github, linkedin, gmail } from "../assets";
 // import linkedin from "../assets/linkedin_logo.svg";
 // import gmail from "../assets/gmail_logo.svg";
 import ContactInfo from "../components/ContactInfo";
+import ScrollTop from "../components/ScrollTop";
 import { contactDesc } from "../info";
 
 const contactList = [
@@ -27,7 +28,11 @@ const contactList = [
 
 const Contact = () => {
   return (
-    <div className="container">
+    <div
+      className="container contact-container"
+      // style={{ height: "90vh" }}
+    >
+      <ScrollTop />
       <div className="row d-flex flex-column flex-md-row justify-content-around align-items-center my-5">
         <div
           className="col-md-6 text-center"
@@ -43,7 +48,7 @@ const Contact = () => {
           />
         </div>
         <div className="col-md-6" data-aos="zoom-in" data-aos-duration="1000">
-          <div className="d-inline-flex flex-column align-items-center title-container">
+          <div className="d-flex flex-column align-items-center title-container">
             <h3 className="display-5 font-weight-bold my-4 contact-title">
               Always feel free to ask
             </h3>

@@ -1,5 +1,6 @@
 import React from "react";
 import { experienceSVG, PASCLogo, SOLLogo } from "../assets";
+import ScrollTop from "../components/ScrollTop";
 // import experience from "../assets/experience-2.svg";
 // import sol_logo from "../assets/sol_logo.png";
 // import pasc_logo from "../assets/PASC_logo.png";
@@ -7,6 +8,7 @@ import { experienceSVG, PASCLogo, SOLLogo } from "../assets";
 const Experience = () => {
   return (
     <div className="container text-center">
+      <ScrollTop />
       <div className="row d-flex flex-column-reverse flex-md-row justify-content-around align-items-center my-5">
         <div className="col-md-6 mr-0 ml-0">
           <div
@@ -14,7 +16,7 @@ const Experience = () => {
             data-aos="zoom-in"
             data-aos-duration="1000"
           >
-            <h1 className="display-5">Experience</h1>
+            <h1 className="display-5 title">Experience</h1>
             <div className="custom-header-divider" />
           </div>
         </div>
@@ -73,7 +75,7 @@ const Experience = () => {
                 Work from home
               </span>
             </div>
-            <p className="mt-4 exp-body">
+            <p className="mt-4 lead exp-body text-justify">
               I worked on the project based on supply-chain management. I have
               made useful components which helps to quickly add
               customer,vendor,etc. I also contributed in code cleaning process
@@ -119,7 +121,7 @@ const Experience = () => {
                 Aug 2019 - present
               </span>
             </div>
-            <p className="mt-4 exp-body">
+            <p className="mt-4 lead exp-body text-justify">
               I got opportunity to take SIGs on competitve programming. I have
               also contributed in building website for our annual techfest
               "Pulzion". Besides, I attend sessions by our alumni and other

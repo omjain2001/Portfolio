@@ -22,6 +22,7 @@ import {
 // import redux from "../assets/redux.svg";
 // import nodejs from "../assets/nodejs.svg";
 import Icons from "../components/Icons";
+import ScrollTop from "../components/ScrollTop";
 
 const projectList = [
   {
@@ -86,16 +87,16 @@ const ProjectCard = ({ img, title, description, logos, btnLabel, btnLink }) => {
             {title}
           </h5>
           <div>
-            <p className="card-text my-4 text-justify project-desc">
+            <p className="card-text my-4 text-justify project-desc lead">
               {description}
             </p>
           </div>
-          <div className="d-flex flex-wrap">
+          <div className="d-flex flex-wrap project-icons">
             {logos.map((item, index) => (
               <Icons
                 src={item.icon}
                 tooltip={item.tooltip}
-                size={30}
+                size={32}
                 key={index}
               />
             ))}
@@ -114,6 +115,7 @@ const ProjectCard = ({ img, title, description, logos, btnLabel, btnLink }) => {
 const Project = () => {
   return (
     <div className="container text-center">
+      <ScrollTop />
       <div className="row d-flex flex-column-reverse flex-md-row justify-content-around align-items-center my-5">
         <div className="col-md-6">
           <div
@@ -121,7 +123,7 @@ const Project = () => {
             data-aos="zoom-in"
             data-aos-duration="1000"
           >
-            <h1 className="display-5">Projects</h1>
+            <h1 className="display-5 title">Projects</h1>
             <div className="custom-header-divider" />
           </div>
         </div>
@@ -129,7 +131,7 @@ const Project = () => {
           <img
             src={projectSVG}
             alt="Graduation"
-            height="300"
+            height="400"
             width="80%"
             className="title-img"
           />
@@ -152,7 +154,7 @@ const Project = () => {
         <button
           className="btn mt-5 mx-auto"
           data-aos="fade-up"
-          data-aos-duration="1000"
+          data-aos-duration="500"
           style={{ marginBottom: 100 }}
         >
           See More Projects

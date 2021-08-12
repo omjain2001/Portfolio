@@ -204,7 +204,7 @@ const DomainInfo = ({
       </div>
       {index % 2 === 0 && (
         <div
-          className="col-lg-6 d-flex align-items-center px-0"
+          className="col-lg-6 d-flex align-items-center px-0 custom-lottie-animation"
           data-aos="fade-left"
           data-aos-duration="1000"
         >
@@ -237,8 +237,9 @@ const Home = () => {
   }, []);
   return (
     <div className="container pb-5">
+      <ScrollTop />
       <div
-        className="row d-flex align-items-center justify-content-center flex-column-reverse flex-lg-row"
+        className="row d-flex align-items-center justify-content-center flex-column-reverse flex-lg-row homepage-row"
         style={{ marginTop: 100, marginBottom: 100 }}
       >
         <div className="col-lg-6 text-center">
@@ -259,7 +260,7 @@ const Home = () => {
               <div className="d-inline-block my-3">⚡ MERN stack developer</div>
               <br /> */}
             </h5>
-            <div className="mt-4 mb-2">
+            <div className="mt-4 mb-2 contact-info">
               {contactList.map((item, index) => (
                 <ContactInfo
                   icon={item.icon}
@@ -291,7 +292,10 @@ const Home = () => {
         data-aos="fade-up"
         data-aos-duration="1000"
       >
-        <span className="quotes" style={{ fontSize: 120, alignSelf: "center" }}>
+        <span
+          className="quotes upquote"
+          style={{ fontSize: 120, alignSelf: "center" }}
+        >
           &#8220;
         </span>
         <p className="lead bio text-justify" style={{ marginTop: -50 }}>
@@ -320,7 +324,6 @@ const Home = () => {
           />
         ))}
       </div>
-      {/* <ScrollTop /> */}
     </div>
   );
 };
