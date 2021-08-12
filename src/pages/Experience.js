@@ -38,7 +38,7 @@ const Experience = () => {
         Internships
       </div>
       <div
-        className="row card custom-card text-left my-5 d-flex flex-column flex-lg-row experience-card"
+        className="row card custom-card my-5 d-flex flex-column flex-lg-row experience-card"
         data-aos="fade-up"
         data-aos-duration="1000"
       >

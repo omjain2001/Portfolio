@@ -327,11 +327,13 @@ body {
 
 /* // X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  /* Navbar */
   .logo {
     height: 60px;
     width: 60px;
   }
 
+  /* Home Page */
   .homePage-icon {
     width: 100%;
   }
@@ -339,65 +341,55 @@ body {
     font-size: 1.5rem;
     line-height: 2.5rem;
   }
-
   .name {
-    font-size: 4rem;
+    font-size: 3.8rem;
   }
-
   .greeting {
     font-size: 35px !important;
   }
-
   .icons {
     height: 3rem;
     width: 3rem;
   }
-
   .bio {
     font-size: 1.3rem;
   }
-
   .quotes {
     font-size: 6rem !important ;
   }
-
   .custom-lottie-animation {
     width: 100% !important;
   }
-
   .domain-title {
     font-size: 1.7rem !important;
   }
-
   .domain-subtitle {
     font-size: 1.5rem !important;
   }
 
+  /* Education */
   .custom-edu-card .card-header h5 {
     font-size: 1.4rem !important;
   }
-
   .edu-info {
     font-size: 1.2rem;
   }
 
+  /* Experience */
   .experience-card-logo {
     width: 80%;
   }
-
   .achievement-title,
   .experience-title,
   .project-title,
   .contact-title {
     font-size: 1.5rem;
   }
-
   .achievement-desc,
   .project-desc,
   .exp-body {
     font-size: 1.3rem !important;
   }
-
   .title-container h1 {
     font-size: 3rem !important;
   }
@@ -406,25 +398,10 @@ body {
     height: auto;
     width: 80%;
   }
-
   .experience-card {
-    margin-right: 1rem !important;
-    margin-left: 1rem !important;
+    margin-left: 2%;
+    margin-right: 2%;
   }
-
-  .project-icons .icons {
-    height: 3rem !important;
-    width: 3rem !important;
-  }
-
-  .contact-title {
-    font-size: 1.3rem;
-  }
-
-  .contact-body {
-    font-size: 1.1rem;
-  }
-
   .exp-company,
   .exp-location {
     font-size: 1.2rem !important;
@@ -437,6 +414,21 @@ body {
     margin-top: 20px;
   }
 
+  /* Project */
+  .project-icons .icons {
+    height: 3rem !important;
+    width: 3rem !important;
+  }
+
+  /* Contact */
+  .contact-title {
+    font-size: 1.2rem;
+  }
+  .contact-body {
+    font-size: 1.1rem;
+  }
+
+  /* Other */
   button {
     font-size: 1.4rem !important;
   }
