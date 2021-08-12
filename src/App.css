@@ -327,15 +327,25 @@ body {
 
 /* // X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  .logo {
+    height: 60px;
+    width: 60px;
+  }
+
   .homePage-icon {
-    height: 150px !important;
+    width: 100%;
   }
   .custom-typing {
-    font-size: 1rem;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
   }
 
   .name {
-    font-size: 2.5rem;
+    font-size: 4rem;
+  }
+
+  .greeting {
+    font-size: 35px !important;
   }
 
   .icons {
@@ -344,11 +354,15 @@ body {
   }
 
   .bio {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 
   .quotes {
     font-size: 6rem !important ;
+  }
+
+  .custom-lottie-animation {
+    width: 100% !important;
   }
 
   .domain-title {
@@ -365,6 +379,10 @@ body {
 
   .edu-info {
     font-size: 1.2rem;
+  }
+
+  .experience-card-logo {
+    width: 80%;
   }
 
   .achievement-title,
@@ -384,9 +402,19 @@ body {
     font-size: 3rem !important;
   }
 
+  .title-img {
+    height: auto;
+    width: 80%;
+  }
+
   .experience-card {
     margin-right: 1rem !important;
     margin-left: 1rem !important;
+  }
+
+  .project-icons .icons {
+    height: 3rem !important;
+    width: 3rem !important;
   }
 
   .contact-title {
@@ -409,12 +437,8 @@ body {
     margin-top: 20px;
   }
 
-  .exp-body #btn-back-to-top {
-    font-size: 2rem !important;
-  }
-
   button {
-    font-size: 1.2rem !important;
+    font-size: 1.4rem !important;
   }
 }
 
