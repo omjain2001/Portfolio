@@ -245,7 +245,7 @@ body {
   }
 
   .custom-nav-link {
-    font-size: 15px;
+    font-size: 22px;
   }
 }
 
@@ -339,8 +339,8 @@ body {
   }
 
   .icons {
-    height: 2rem;
-    width: 2rem;
+    height: 3rem;
+    width: 3rem;
   }
 
   .bio {
@@ -352,19 +352,36 @@ body {
   }
 
   .domain-title {
-    font-size: 1.1rem;
+    font-size: 1.7rem !important;
   }
 
   .domain-subtitle {
-    font-size: 1rem !important;
+    font-size: 1.5rem !important;
   }
 
   .custom-edu-card .card-header h5 {
-    font-size: 1.1rem !important;
+    font-size: 1.4rem !important;
+  }
+
+  .edu-info {
+    font-size: 1.2rem;
+  }
+
+  .achievement-title,
+  .experience-title,
+  .project-title,
+  .contact-title {
+    font-size: 1.5rem;
+  }
+
+  .achievement-desc,
+  .project-desc,
+  .exp-body {
+    font-size: 1.3rem !important;
   }
 
   .title-container h1 {
-    font-size: 1.8rem;
+    font-size: 3rem !important;
   }
 
   .experience-card {
@@ -382,25 +399,29 @@ body {
 
   .exp-company,
   .exp-location {
-    font-size: 1rem !important;
+    font-size: 1.2rem !important;
     align-self: flex-start;
   }
 
   .exp-duration {
-    font-size: 1rem !important;
+    font-size: 1.2rem !important;
     align-self: flex-start;
-    margin-top: 15px;
+    margin-top: 20px;
   }
 
-  #btn-back-to-top {
+  .exp-body #btn-back-to-top {
     font-size: 2rem !important;
+  }
+
+  button {
+    font-size: 1.2rem !important;
   }
 }
 
-@media (max-width: 399.98px) {
+/* @media (max-width: 399.98px) {
   .logo {
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
   }
 
   .navbar-toggle-btn {
@@ -409,7 +430,7 @@ body {
   }
 
   .custom-nav-link {
-    font-size: 1rem !important;
+    font-size: 22 !important;
   }
 
   .bio {
@@ -436,10 +457,6 @@ body {
   .achievement-desc,
   .project-desc {
     font-size: 0.9rem !important;
-  }
-
-  .custom-edu-card .card-header h5 {
-    font-size: 1rem !important;
   }
 
   button {
@@ -492,11 +509,6 @@ body {
     line-height: 1.5rem;
   }
 
-  .icons {
-    height: 1.9rem;
-    width: 1.9rem;
-  }
-
   .custom-lottie-animation {
     width: 100% !important;
   }
@@ -518,7 +530,7 @@ body {
   }
 
   button {
-    font-size: 1rem !important;
+    font-size: 1.5rem !important;
   }
 
   .domain-title {
@@ -625,9 +637,9 @@ body {
     height: 50px;
   }
 
-  /* .experience-card-logo {
+  .experience-card-logo {
     width: 50%;
-  } */
+  }
 
   .exp-company,
   .exp-location,
@@ -668,7 +680,7 @@ body {
   button {
     font-size: 0.75rem !important;
   }
-}
+} */
 
 #btn-back-to-top {
   position: fixed;
