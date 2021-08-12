@@ -409,7 +409,7 @@ body {
   }
 
   .custom-nav-link {
-    font-size: 0.8rem !important;
+    font-size: 1rem !important;
   }
 
   .bio {
@@ -483,6 +483,32 @@ body {
 }
 
 @media (max-width: 320.98px) {
+  .homePage-icon {
+    height: 180px !important;
+  }
+
+  .custom-typing {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .icons {
+    height: 1.9rem;
+    width: 1.9rem;
+  }
+
+  .custom-lottie-animation {
+    width: 100% !important;
+  }
+
+  .education-degree {
+    font-size: 1.1rem;
+  }
+
+  .edu-info {
+    font-size: 0.9rem !important;
+  }
+
   .title-img {
     height: 150px;
   }
@@ -491,16 +517,12 @@ body {
     font-size: 1.5rem !important;
   }
 
+  button {
+    font-size: 1rem !important;
+  }
+
   .domain-title {
     font-size: 0.9rem;
-  }
-
-  .custom-edu-card .card-header h5 {
-    font-size: 0.9rem !important;
-  }
-
-  .edu-info {
-    font-size: 0.8rem !important;
   }
 
   .experience-card-logo {
