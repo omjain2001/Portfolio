@@ -85,6 +85,15 @@
   box-shadow: 1px 1px 5px #012f47;
 } */
 
+.icons {
+  transition: all ease 0.3s;
+}
+
+.icons:hover {
+  transform: translate(0%, -8%) scale(1.09, 1.09);
+  transition: all ease-in-out 0.3s;
+}
+
 .tooltip div.tooltip-inner {
   background-color: #012f47 !important;
   color: #fff !important;
@@ -193,8 +202,8 @@ body {
   }
 
   .icons {
-    height: 2.2rem;
-    width: 2.2rem;
+    height: 3rem;
+    width: 3rem;
   }
 
   .edu-info {
@@ -322,6 +331,14 @@ body {
 
   .project-img {
     height: 10%;
+  }
+
+  .contact-title {
+    font-size: 1.5rem;
+  }
+
+  .contact-body {
+    font-size: 1.2rem;
   }
 }
 

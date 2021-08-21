@@ -1,130 +1,17 @@
 import React, { useEffect, useRef } from "react";
-import {
-  profileSVG,
-  html5,
-  bootstrap,
-  react,
-  redux,
-  cpp,
-  java,
-  python,
-  javascript,
-  mongodb,
-  firebase,
-  mysql,
-  nodejs,
-  github,
-  linkedin,
-  gmail,
-} from "../assets";
+import { profileSVG } from "../assets";
+import { whatIDo } from "../data/homedata.js";
+import { contactList } from "../data/contactdata.js";
 
 import { typedInfo, bio } from "../info.js";
 
-// // Frontend tech logos
-// import html5 from "../assets/html5.svg";
-// import bootstrap from "../assets/bootstrap-4.svg";
-// import react from "../assets/react.svg";
-// import redux from "../assets/redux.svg";
-
-// // Programming languages logos
-// import c from "../assets/c.svg";
-// import java from "../assets/java.svg";
-// import python from "../assets/python.svg";
-// import javascript from "../assets/javascript.svg";
-
-// // Database logos
-// import mongodb from "../assets/mongodb.svg";
-// import firebase from "../assets/firebase.svg";
-// import mysql from "../assets/mysql.svg";
-
-// // Backend tech logos
-// import nodejs from "../assets/nodejs.svg";
-
-// // Contact icons
-// import github from "../assets/github.svg";
-// import linkedin from "../assets/linkedin_logo.svg";
-// import gmail from "../assets/gmail_logo.svg";
-
 import Lottie from "react-lottie";
-import webDevAnimationData from "../lotties/web_development.json";
-import appDevAnimationData from "../lotties/app_development.json";
-import databaseAnimationData from "../lotties/database.json";
-import programmingLanguagesAnimationData from "../lotties/programming_languages.json";
 import Icons from "../components/Icons";
 import { COLORS } from "../COLORS";
 import ContactInfo from "../components/ContactInfo";
 
 import Typed from "typed.js";
-import ParticlesBackground from "../components/ParticlesBackground";
 import ScrollTop from "../components/ScrollTop";
-
-const whatIDo = {
-  webDev: {
-    label: "Web Technologies",
-    icons: {
-      Frontend: [
-        { src: html5, tooltip: "HTML5" },
-        { src: bootstrap, tooltip: "Bootstrap" },
-        { src: react, tooltip: "React" },
-        { src: redux, tooltip: "Redux" },
-      ],
-      Backend: [{ src: nodejs, tooltip: "Nodejs" }],
-    },
-    subLabels: ["Frontend", "Backend"],
-    animationData: webDevAnimationData,
-  },
-  appDev: {
-    label: "App Technologies",
-    icons: [{ src: react, tooltip: "React Native" }],
-    subLabels: null,
-    animationData: appDevAnimationData,
-  },
-  database: {
-    label: "Database System",
-    icons: [
-      { src: mongodb, tooltip: "MongoDB" },
-      { src: firebase, tooltip: "Firebase" },
-      { src: mysql, tooltip: "MySQL" },
-    ],
-    subLabels: null,
-    animationData: databaseAnimationData,
-    customizeAnimation: {
-      height: "60%",
-    },
-  },
-  programmingLanguages: {
-    label: "Programming Languages",
-    icons: [
-      { src: cpp, tooltip: "C++" },
-      { src: java, tooltip: "Java" },
-      { src: python, tooltip: "Python" },
-      { src: javascript, tooltip: "Javascript" },
-    ],
-    subLabels: null,
-    animationData: programmingLanguagesAnimationData,
-    // customizeAnimation: {
-    //   height: 400,
-    // },
-  },
-};
-
-const contactList = [
-  {
-    icon: github,
-    tooltip: "Github",
-    url: "https://github.com/omjain2001",
-  },
-  {
-    icon: linkedin,
-    tooltip: "Linkedin",
-    url: "https://linkedin.com/in/om-jain-981752197",
-  },
-  {
-    icon: gmail,
-    tooltip: "Email",
-    url: "mailto:email@omjain2606@gmail.com",
-  },
-];
 
 const LottieAnimation = ({ animationData, customizeAnimation }) => {
   const defaultOptions = {
@@ -157,7 +44,7 @@ const DomainInfo = ({
   return (
     <div
       className={`row d-flex ${
-        index % 2 === 0 ? "flex-column-reverse px-0" : ""
+        index % 2 === 0 ? "" : "flex-column-reverse px-0"
       } flex-lg-row justify-content-center my-5 align-items-center`}
     >
       {index % 2 !== 0 && (

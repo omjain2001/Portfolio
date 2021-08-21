@@ -1,6 +1,4 @@
 import React from "react";
-import curve from "../assets/curve.svg";
-import curve_2 from "../assets/curve_2.svg";
 import { COLORS } from "../COLORS";
 
 const Curve = () => {

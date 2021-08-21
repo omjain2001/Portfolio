@@ -16,8 +16,8 @@ const Icons = ({ src, tooltip, size }) => {
     >
       <img
         src={src}
-        height={size ? size : 40}
-        width={size ? size : 40}
+        height={size ? size : 50}
+        width={size ? size : 50}
         alt="Frontend icons"
         style={{ margin: 10, cursor: "pointer" }}
         className="icons"

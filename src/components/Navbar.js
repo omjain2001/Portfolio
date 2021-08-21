@@ -4,6 +4,27 @@ import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/OJ_logo.svg";
 
 const NavItem = ({ link, label }) => {
+  // const [toggle, setToggle] = useState();
+
+  // const func = (x) => {
+  //   if (x.matches) {
+  //     setToggle(true);
+  //   } else setToggle(false);
+  // };
+
+  // var x = window.matchMedia("max-width: 767.98px");
+  // func(x);
+  // x.addEventListener("change", func);
+
+  // const query = window.matchMedia("max-width: 767.98px");
+  // useEffect(() => {
+  //   if (query.matches) {
+  //     setToggle(true);
+  //   } else {
+  //     setToggle(false);
+  //   }
+  // }, [query]);
+
   return (
     <li className="d-inline-block d-md-block nav-item mx-2 my-sm-2">
       <NavLink
@@ -12,11 +33,11 @@ const NavItem = ({ link, label }) => {
         className="nav-link custom-nav-link pb-2"
         style={{ textDecoration: "none", color: "#fff" }}
         activeClassName="custom-active-nav-link"
-        // data-toggle="collapse"
-        // data-target="#navbarSupportedContent"
-        // aria-controls="navbarSupportedContent"
-        // aria-expanded="false"
-        // aria-label="Toggle navigation"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
       >
         {label}
       </NavLink>
@@ -40,6 +61,7 @@ const Navbar = () => {
         backgroundColor: COLORS.backgroundColor,
         boxShadow: "0px 2px 10px",
       }}
+      onc
     >
       <div className="container-fluid">
         {/* <span

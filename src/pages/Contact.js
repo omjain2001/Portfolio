@@ -1,30 +1,9 @@
 import React from "react";
-import { contactEnvelopSVG, github, linkedin, gmail } from "../assets";
-// import contact_envelop from "../assets/contact_envelop.svg";
-// import github from "../assets/github.svg";
-// import linkedin from "../assets/linkedin_logo.svg";
-// import gmail from "../assets/gmail_logo.svg";
+import { contactEnvelopSVG } from "../assets";
 import ContactInfo from "../components/ContactInfo";
 import ScrollTop from "../components/ScrollTop";
 import { contactDesc } from "../info";
-
-const contactList = [
-  {
-    icon: github,
-    tooltip: "Github",
-    url: "https://github.com/omjain2001",
-  },
-  {
-    icon: linkedin,
-    tooltip: "Linkedin",
-    url: "https://linkedin.com/in/om-jain-981752197",
-  },
-  {
-    icon: gmail,
-    tooltip: "Email",
-    url: "mailto:email@omjain2606@gmail.com",
-  },
-];
+import { contactList } from "../data/contactdata";
 
 const Contact = () => {
   return (

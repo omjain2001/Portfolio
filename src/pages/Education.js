@@ -1,16 +1,5 @@
 import React from "react";
-import {
-  graduationSVG,
-  achievementSVG,
-  hackerrank,
-  coursera,
-  codechef,
-} from "../assets";
-// import graduation from "../assets/graduation.svg";
-// import achivements from "../assets/achivements.svg";
-// import hackerrank from "../assets/hackerrank.svg";
-// import coursera from "../assets/coursera-2.svg";
-// import codechef from "../assets/codechef.svg";
+import { graduationSVG, achievementSVG } from "../assets";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMapMarkerAlt,
@@ -18,57 +7,9 @@ import {
   faCertificate,
 } from "@fortawesome/free-solid-svg-icons";
 import { COLORS } from "../COLORS";
-import ParticlesBackground from "../components/ParticlesBackground";
 import ScrollTop from "../components/ScrollTop";
 
-const educationList = [
-  {
-    degree: "Bachelor of Engineering - Information Technology",
-    university: "Pune Institute of Computer Technology",
-    location: "Pune, India",
-    score: "GPA - 9.34",
-  },
-  {
-    degree: "Higher Secondary Certificate (HSC)",
-    university: "Swami Vivekanand junior college",
-    location: "Jalgaon, India",
-    score: "Score - 90.77%",
-  },
-  {
-    degree: "Secondary School Certificate (SSC)",
-    university: "St. Teresa’s Convent Higher Secondary School",
-    location: "Jalgaon, India",
-    score: "Score - 96.00%",
-  },
-];
-
-const achievementList = [
-  {
-    img: hackerrank,
-    title: "Skills",
-    description:
-      "Hackerrank is the best platform to kickstart competitive coding as well as build your coding skills. I have practiced programming languages such as c++, python, java on it. I solve various questions on it to improve problem solving skill.",
-    buttonLabel: "Stats",
-    url: "https://www.hackerrank.com/omjain2606",
-  },
-  {
-    img: coursera,
-    title: "Programming for Everybody (Getting Started with Python)",
-    description:
-      "I have learned the basics of python through this course. Charles Russell Severance, the instructor of this course taught and explained python programming basics in a very simple manner.",
-    buttonLabel: "Certificate",
-    url: "https://coursera.org/share/1f3afacb4d6a4d8037a58e7386a639d0",
-    style: { width: "50%", color: COLORS.button },
-  },
-  // {
-  //   img: codechef,
-  //   title: "Skills",
-  //   description:
-  //     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
-  //   buttonLabel: "Stats",
-  //   url: "https://www.codechef.com/users/omjain_1008",
-  // },
-];
+import { educationList, achievementList } from "../data/educationdata";
 
 const EducationCard = ({ degree, university, location, score }) => {
   return (
@@ -143,14 +84,6 @@ const AchievementCard = ({
           <p className="card-text mt-4 text-justify lead achievement-desc">
             {description}
           </p>
-          {/* <a
-            href={url}
-            rel="noreferrer"
-            target="_blank"
-            className="vertical-align-end"
-          >
-            <button className="btn mt-4">{buttonLabel}</button>
-          </a> */}
         </div>
         <div className="card-footer">
           <a
@@ -235,6 +168,7 @@ const Education = () => {
       <div className="row d-flex flex-wrap mt-5 justify-content-center">
         {achievementList.map((item, index) => (
           <AchievementCard
+            key={index}
             img={item.img}
             title={item.title}
             description={item.description}
