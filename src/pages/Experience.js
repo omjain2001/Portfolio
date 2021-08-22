@@ -1,15 +1,12 @@
 import React from "react";
 import { experienceSVG, PASCLogo, SOLLogo } from "../assets";
 import ScrollTop from "../components/ScrollTop";
-// import experience from "../assets/experience-2.svg";
-// import sol_logo from "../assets/sol_logo.png";
-// import pasc_logo from "../assets/PASC_logo.png";
 
 const Experience = () => {
   return (
     <div className="container text-center">
       <ScrollTop />
-      <div className="row d-flex flex-column-reverse flex-md-row justify-content-around align-items-center my-5">
+      <div className="row d-flex flex-column flex-md-row justify-content-around align-items-center my-5">
         <div className="col-md-6 mr-0 ml-0">
           <div
             className="d-inline-flex flex-column align-items-center title-container"
@@ -38,7 +35,7 @@ const Experience = () => {
         Internships
       </div>
       <div
-        className="row card custom-card my-5 d-flex flex-column flex-lg-row experience-card"
+        className="row card custom-card my-5 d-flex flex-column flex-lg-row experience-card content-row"
         data-aos="fade-up"
         data-aos-duration="1000"
       >
@@ -93,7 +90,7 @@ const Experience = () => {
         Volunteer
       </div>
       <div
-        className="row card custom-card text-left my-5 d-flex flex-column flex-lg-row experience-card"
+        className="row card custom-card text-left my-5 d-flex flex-column flex-lg-row experience-card content-row"
         data-aos="fade-up"
         data-aos-duration="1000"
       >

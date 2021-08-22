@@ -53,7 +53,7 @@ const Project = () => {
   return (
     <div className="container text-center">
       <ScrollTop />
-      <div className="row d-flex flex-column-reverse flex-md-row justify-content-around align-items-center my-5">
+      <div className="row d-flex flex-column flex-md-row justify-content-around align-items-center my-5">
         <div className="col-md-6">
           <div
             className="d-inline-flex flex-column align-items-center title-container"
@@ -74,7 +74,7 @@ const Project = () => {
           />
         </div>
       </div>
-      <div className="row my-5 d-flex flex-column flex-md-row">
+      <div className="row my-5 d-flex flex-column flex-md-row content-row">
         {projectList.map((item, index) => (
           <ProjectCard
             img={item.img}
@@ -88,12 +88,7 @@ const Project = () => {
         ))}
       </div>
       <a href="https://github.com/omjain2001" target="_blank" rel="noreferrer">
-        <button
-          className="btn mt-5 mx-auto"
-          data-aos="fade-up"
-          data-aos-duration="500"
-          style={{ marginBottom: 100 }}
-        >
+        <button className="btn " style={{ marginBottom: 50 }}>
           See More Projects
         </button>
       </a>

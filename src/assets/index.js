@@ -12,6 +12,7 @@ export { default as gmail } from "./gmail.svg";
 export { default as hackerrank } from "./hackerrank.svg";
 export { default as html5 } from "./html5.svg";
 export { default as linkedin } from "./linkedin.svg";
+export { default as instagram } from "./instagram.svg";
 export { default as mongodb } from "./mongodb.svg";
 export { default as mysql } from "./mysql.svg";
 export { default as nodejs } from "./nodejs.svg";
@@ -36,3 +37,6 @@ export { default as istriwalaImg } from "./istriwala.png";
 // Experience
 export { default as PASCLogo } from "./pasc_logo.png";
 export { default as SOLLogo } from "./sol_logo.png";
+
+// Contacts
+export { default as address } from "./address.svg";

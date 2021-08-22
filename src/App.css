@@ -6,6 +6,7 @@
 .custom-nav-link {
   transition: all ease 0.8s;
   position: relative;
+  font-size: 18px;
 }
 
 .custom-nav-link:hover {
@@ -158,10 +159,35 @@ body {
 }
 
 #btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: inline-block;
+  font-size: 3rem;
+  color: #00bfa6;
+  opacity: 0.5;
+}
+
+#btn-back-to-top:hover {
+  transition: all ease 0.5s;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.contact-info h5 {
+  letter-spacing: 1.1px;
+}
+
+.contact-list h4 {
+  color: #00bfa6;
+  font-weight: bold;
+}
+
+/* #btn-back-to-top {
   z-index: 3000;
   display: inline-block !important;
   font-size: 2.8rem !important;
-}
+} */
 
 /* // X-Large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
@@ -202,8 +228,8 @@ body {
   }
 
   .icons {
-    height: 3rem;
-    width: 3rem;
+    height: 2.5rem;
+    width: 2.5rem;
   }
 
   .edu-info {
@@ -308,12 +334,26 @@ body {
 
 /* // Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+  #btn-back-to-top {
+    bottom: 10px;
+    right: 10px;
+    font-size: 2.5rem !important;
+  }
+
   .homePage-icon {
     height: 200px !important;
   }
 
   .title-img {
     height: 250px;
+  }
+
+  .row {
+    margin-top: 0 !important;
+  }
+
+  .content-row {
+    margin-top: 10% !important;
   }
 
   button {
@@ -323,22 +363,33 @@ body {
   .title-img {
     height: auto;
     width: 60%;
+    margin-top: 3rem;
   }
 
   .title-container {
     margin-top: 3rem !important;
   }
+  /* 
+  .experience-card {
+    margin-top: 10% !important;
+  } */
 
   .project-img {
     height: 10%;
   }
 
   .contact-title {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    width: 100% !important;
+    text-align: center;
   }
 
   .contact-body {
     font-size: 1.2rem;
+  }
+
+  .contact-info h5 {
+    font-size: 1.5rem !important;
   }
 }
 
@@ -443,6 +494,10 @@ body {
   }
   .contact-body {
     font-size: 1.1rem;
+  }
+
+  .contact-info h5 {
+    font-size: 1.2rem !important;
   }
 
   /* Other */
@@ -714,19 +769,3 @@ body {
     font-size: 0.75rem !important;
   }
 } */
-
-#btn-back-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  display: inline-block;
-  font-size: 3rem;
-  color: #00bfa6;
-  opacity: 0.5;
-}
-
-#btn-back-to-top:hover {
-  transition: all ease 0.5s;
-  opacity: 1;
-  cursor: pointer;
-}

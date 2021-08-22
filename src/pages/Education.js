@@ -104,7 +104,7 @@ const Education = () => {
   return (
     <div className="container">
       <ScrollTop />
-      <div className="row d-flex flex-column-reverse flex-md-row justify-content-around align-items-center my-5">
+      <div className="row d-flex flex-column flex-md-row justify-content-around align-items-center my-5">
         <div className="col-md-6 text-center">
           <div
             className="d-inline-flex flex-column align-items-center title-container"
@@ -143,7 +143,7 @@ const Education = () => {
           />
         ))}
       </div>
-      <div className="row d-flex flex-column flex-md-row justify-content-around align-items-center my-5 achievement-container">
+      <div className="row d-flex flex-column-reverse flex-md-row justify-content-around align-items-center my-5 achievement-container">
         <div
           className="col-md-6 text-center"
           data-aos="flip-right"

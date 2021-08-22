@@ -1,4 +1,4 @@
-import { github, linkedin, gmail } from "../assets";
+import { github, linkedin, instagram, gmail } from "../assets";
 
 export const contactList = [
   {
@@ -12,8 +12,26 @@ export const contactList = [
     url: "https://linkedin.com/in/om-jain-981752197",
   },
   {
+    icon: instagram,
+    tooltip: "Instagram",
+    url: "https://www.instagram.com/om_jain2606/",
+  },
+];
+
+export const contactListHomePage = [
+  {
+    icon: github,
+    tooltip: "Github",
+    url: "https://github.com/omjain2001",
+  },
+  {
+    icon: linkedin,
+    tooltip: "Linkedin",
+    url: "https://linkedin.com/in/om-jain-981752197",
+  },
+  {
     icon: gmail,
-    tooltip: "Email",
-    url: "mailto:email@omjain2606@gmail.com",
+    tooltip: "Gmail",
+    url: "mailto:omjain2606@gmail.com",
   },
 ];

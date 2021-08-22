@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { profileSVG } from "../assets";
 import { whatIDo } from "../data/homedata.js";
-import { contactList } from "../data/contactdata.js";
+import { contactListHomePage } from "../data/contactdata.js";
 
 import { typedInfo, bio } from "../info.js";
 
@@ -148,7 +148,7 @@ const Home = () => {
               <br /> */}
             </h5>
             <div className="mt-4 mb-2 contact-info">
-              {contactList.map((item, index) => (
+              {contactListHomePage.map((item, index) => (
                 <ContactInfo
                   icon={item.icon}
                   url={item.url}

@@ -4,6 +4,8 @@ import ContactInfo from "../components/ContactInfo";
 import ScrollTop from "../components/ScrollTop";
 import { contactDesc } from "../info";
 import { contactList } from "../data/contactdata";
+import { gmail, address } from "../assets";
+import Icons from "../components/Icons";
 
 const Contact = () => {
   return (
@@ -37,7 +39,8 @@ const Contact = () => {
             >
               {contactDesc}
             </h5>
-            <div className="mt-5">
+            <div className="mt-5 w-100 text-center mb-5 contact-list">
+              <h4 className="text-center mb-3">Get in touch !</h4>
               {contactList.map((item, index) => (
                 <ContactInfo
                   icon={item.icon}
@@ -46,6 +49,22 @@ const Contact = () => {
                   key={index}
                 />
               ))}
+              <div
+                className="d-flex align-items-center mt-4 contact-info"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              >
+                <Icons src={gmail} size="40" tooltip="Email" />
+                <h5 className="mb-0 ml-3 lead">omjain2606@gmail.com</h5>
+              </div>
+              <div
+                className="d-flex align-items-center contact-info"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              >
+                <Icons src={address} size="40" tooltip="Address" />
+                <h5 className="mb-0 ml-3 lead">Jalgaon, Maharashtra</h5>
+              </div>
             </div>
           </div>
         </div>

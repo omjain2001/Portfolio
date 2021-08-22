@@ -12,4 +12,4 @@ I like to play chess, cricket, watch movies. Eager to learn many new tech stuff 
 
 export const contactDesc = `I can help you with web dev skills. Let's connect to share various 
 tech stuff. I am always available for your queries. Let’s learn together. You can reach me out 
-through following means...`;
+through following means`;
