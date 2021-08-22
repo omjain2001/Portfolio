@@ -344,10 +344,6 @@ body {
     height: 200px !important;
   }
 
-  .title-img {
-    height: 250px;
-  }
-
   .row {
     margin-top: 0 !important;
   }
@@ -363,7 +359,7 @@ body {
   .title-img {
     height: auto;
     width: 60%;
-    margin-top: 3rem;
+    margin-top: 4rem;
   }
 
   .title-container {
@@ -389,7 +385,7 @@ body {
   }
 
   .contact-info h5 {
-    font-size: 1.5rem !important;
+    font-size: 1.2rem !important;
   }
 }
 
@@ -497,7 +493,7 @@ body {
   }
 
   .contact-info h5 {
-    font-size: 1.2rem !important;
+    font-size: 1.5rem !important;
   }
 
   /* Other */
