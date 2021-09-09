@@ -131,7 +131,7 @@ const Home = () => {
       >
         <div className="col-lg-6 text-center">
           <div className="mx-auto">
-            <h3 className="greeting">Holla everyone !</h3>
+            <h3 className="greeting">Holla everyone!</h3>
             <h1 className="name display-3 my-3 font-weight-bold">
               I'm <span style={{ color: COLORS.button }}>Om Jain</span>
             </h1>

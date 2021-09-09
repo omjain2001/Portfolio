@@ -1,11 +1,11 @@
 export const typedInfo = [
-  "I am a MERN stack developer",
+  "I am a Full stack developer",
   "I am familiar with React Native",
   "I am exploring ML and Cloud Computing",
 ];
 
 export const bio = `I am currently pursuing Bachelor's degree in Information Technology from 
-Pune Institute of Computer Technology. I am a MERN stack developer and also familiar with React 
+Pune Institute of Computer Technology. I am a Full stack developer and also familiar with React 
 Native for cross platform web app. Currently, I am exploring Machine Learning and Cloud Computing 
 domains. Looking forward to develop my problem solving skill to solve real life problems. Besides, 
 I like to play chess, cricket, watch movies. Eager to learn many new tech stuff ahead !!`;

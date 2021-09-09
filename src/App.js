@@ -6,6 +6,7 @@ import Education from "./pages/Education";
 import Experience from "./pages/Experience";
 import Project from "./pages/Project";
 import Contact from "./pages/Contact";
+import { Footer } from "./components/Footer";
 require("@popperjs/core");
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route exact path="/project" component={Project} />
         <Route exact path="/contact" component={Contact} />
       </Switch>
+      <Footer />
       {/* <ScrollTop /> */}
     </BrowserRouter>
   );

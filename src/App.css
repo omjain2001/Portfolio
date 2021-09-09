@@ -183,6 +183,14 @@ body {
   font-weight: bold;
 }
 
+.custom-footer {
+  margin-top: 20px;
+  padding: 20px 0px;
+  background-color: #001722;
+  text-align: center;
+  letter-spacing: 1.1px;
+}
+
 /* #btn-back-to-top {
   z-index: 3000;
   display: inline-block !important;
