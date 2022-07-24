@@ -1,5 +1,5 @@
 import React from "react";
-import { experienceSVG, PASCLogo, SOLLogo } from "../assets";
+import { experienceSVG, PASCLogo, SOLLogo, dwebboxLogo } from "../assets";
 import ScrollTop from "../components/ScrollTop";
 
 const Experience = () => {
@@ -33,6 +33,55 @@ const Experience = () => {
         data-aos-duration="1000"
       >
         Internships
+      </div>
+      <div
+        className="row card custom-card my-5 d-flex flex-column flex-lg-row experience-card content-row"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <div className="col-lg-2">
+          <div className="card-body text-center">
+            <img
+              src={dwebboxLogo}
+              alt="Logo"
+              height="20%"
+              width="100%"
+              className="experience-card-logo"
+            />
+          </div>
+        </div>
+        <div className="col-lg-10">
+          <div className="card-body px-0">
+            <div className="d-flex flex-column flex-sm-row justify-content-between align-items-center ">
+              <h5 className="card-title font-weight-bold mb-0 experience-title">
+                Full Stack Developer Intern
+              </h5>
+              <span
+                style={{ fontSize: 15, color: "skyblue" }}
+                className="exp-duration"
+              >
+                Sept 2021 - March 2022
+              </span>
+            </div>
+            <div className="d-flex justify-content-between flex-column flex-sm-row align-items-center">
+              <cite className="cite exp-company">D-WebBox</cite>
+              <span
+                style={{ fontSize: 15, color: "skyblue" }}
+                className="exp-location"
+              >
+                Work from home
+              </span>
+            </div>
+            <p className="mt-4 lead exp-body text-justify">
+              I worked on the company's official website to improve UI and
+              animations. I have built an admin panel that helps the admins to
+              add data which will be dynamically rendered on webpage. Integrated
+              CKEditor tool that allows the admins to style their data. I have
+              built robust mobile application UI screens using React Native.
+              Integrated API endpoints with the app.
+            </p>
+          </div>
+        </div>
       </div>
       <div
         className="row card custom-card my-5 d-flex flex-column flex-lg-row experience-card content-row"
@@ -119,10 +168,11 @@ const Experience = () => {
               </span>
             </div>
             <p className="mt-4 lead exp-body text-justify">
-              I got opportunity to take SIGs on competitve programming. I have
-              also contributed in building website for our annual techfest
-              "Pulzion". Besides, I attend sessions by our alumni and other
-              industry experts.
+              I got an opportunity to take SIG on competitve programming. I have
+              contributed in creating website for our annual techfest "Pulzion".
+              I have also contributed in developing PASC's official website.
+              Besides, I attend sessions by our alumni and other industry
+              experts.
             </p>
           </div>
         </div>

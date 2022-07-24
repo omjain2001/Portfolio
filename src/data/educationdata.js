@@ -6,7 +6,7 @@ export const educationList = [
     degree: "Bachelor of Engineering - Information Technology",
     university: "Pune Institute of Computer Technology",
     location: "Pune, India",
-    score: "GPA - 9.34",
+    score: "CGPA - 9.67",
   },
   {
     degree: "Higher Secondary Certificate (HSC)",

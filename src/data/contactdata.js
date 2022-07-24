@@ -9,7 +9,7 @@ export const contactList = [
   {
     icon: linkedin,
     tooltip: "Linkedin",
-    url: "https://linkedin.com/in/om-jain-981752197",
+    url: "https://www.linkedin.com/in/omjain26",
   },
   {
     icon: instagram,
@@ -27,7 +27,7 @@ export const contactListHomePage = [
   {
     icon: linkedin,
     tooltip: "Linkedin",
-    url: "https://linkedin.com/in/om-jain-981752197",
+    url: "https://www.linkedin.com/in/omjain26",
   },
   {
     icon: gmail,

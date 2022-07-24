@@ -37,6 +37,7 @@ export { default as istriwalaImg } from "./istriwala.png";
 // Experience
 export { default as PASCLogo } from "./pasc_logo.png";
 export { default as SOLLogo } from "./sol_logo.png";
+export { default as dwebboxLogo } from "./dwebboxLogo.png";
 
 // Contacts
 export { default as address } from "./address.svg";
