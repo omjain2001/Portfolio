@@ -37,7 +37,7 @@ export const projectList = [
       { icon: mongodb, tooltip: "MongoDB" },
     ],
     btnLabel: "View",
-    btnLink: "https://connect-with-world.herokuapp.com/",
+    btnLink: "https://devconnector-fqu1.onrender.com",
   },
   {
     img: chatAppImg,
@@ -49,6 +49,6 @@ export const projectList = [
       { icon: socketIo, tooltip: "Socket.io" },
     ],
     btnLabel: "Link",
-    btnLink: "https://jain-chat-room.herokuapp.com/",
+    btnLink: "https://chatapp-5p97.onrender.com",
   },
 ];
