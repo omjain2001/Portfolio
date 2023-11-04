@@ -1,5 +1,11 @@
 import React from "react";
-import { experienceSVG, PASCLogo, SOLLogo, dwebboxLogo } from "../assets";
+import {
+  experienceSVG,
+  PASCLogo,
+  SOLLogo,
+  dwebboxLogo,
+  pubmatic,
+} from "../assets";
 import ScrollTop from "../components/ScrollTop";
 
 const Experience = () => {
@@ -33,6 +39,54 @@ const Experience = () => {
         data-aos-duration="1000"
       >
         Internships
+      </div>
+      <div
+        className="row card custom-card my-5 d-flex flex-column flex-lg-row experience-card content-row"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <div className="col-lg-2">
+          <div className="text-center">
+            <img
+              src={pubmatic}
+              alt="Logo"
+              // height="60%"
+              width="100%"
+              className="experience-card-logo"
+            />
+          </div>
+        </div>
+        <div className="col-lg-10">
+          <div className="card-body px-0">
+            <div className="d-flex flex-column flex-sm-row justify-content-between align-items-center ">
+              <h5 className="card-title font-weight-bold mb-0 experience-title">
+                Software Engineer
+              </h5>
+              <span
+                style={{ fontSize: 15, color: "skyblue" }}
+                className="exp-duration"
+              >
+                Jan 2023 - June 2023
+              </span>
+            </div>
+            <div className="d-flex justify-content-between flex-column flex-sm-row align-items-center">
+              <cite className="cite exp-company">PubMatic</cite>
+              <span
+                style={{ fontSize: 15, color: "skyblue" }}
+                className="exp-location"
+              >
+                Hybrid
+              </span>
+            </div>
+            <p className="mt-4 lead exp-body text-justify">
+              I worked in "Private Marketplace" backend team that offers a
+              premium service to their customers by assuring a guaranteed
+              impressions through a deal between buyer and publisher. My
+              responsibilities included feature implementation, bug fixing,
+              documentation, and testing.
+            </p>
+          </div>
+        </div>
       </div>
       <div
         className="row card custom-card my-5 d-flex flex-column flex-lg-row experience-card content-row"
@@ -164,7 +218,7 @@ const Experience = () => {
                 style={{ fontSize: 15, color: "skyblue" }}
                 className="exp-duration"
               >
-                Aug 2019 - present
+                Aug 2019 - May 2023
               </span>
             </div>
             <p className="mt-4 lead exp-body text-justify">

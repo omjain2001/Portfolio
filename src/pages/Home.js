@@ -131,7 +131,7 @@ const Home = () => {
       >
         <div className="col-lg-6 text-center">
           <div className="mx-auto">
-            <h3 className="greeting">Holla everyone!</h3>
+            <h3 className="greeting">Hey everybody!</h3>
             <h1 className="name display-3 my-3 font-weight-bold">
               I'm <span style={{ color: COLORS.button }}>Om Jain</span>
             </h1>
@@ -158,7 +158,7 @@ const Home = () => {
               ))}
             </div>
             <a
-              href="https://drive.google.com/file/d/1xi1LhiVP_foBMHyUREHV8S0RlYwjAqxz/view?usp=sharing"
+              href="https://drive.google.com/file/d/1YMp3-3PvozPLq5pn5N8qVf1FfnkRiQPL/view?usp=drive_link"
               target="_blank"
               rel="noreferrer"
             >

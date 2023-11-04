@@ -71,7 +71,7 @@ const AchievementCard = ({
     >
       <div class="card custom-card text-center">
         <img
-          className="card-img-top mt-4 align-self-center achievement-card-img"
+          className="mt-4 align-self-center achievement-card-img"
           src={img}
           alt="Logo"
           height="80"
@@ -85,16 +85,18 @@ const AchievementCard = ({
             {description}
           </p>
         </div>
-        <div className="card-footer">
-          <a
-            href={url}
-            rel="noreferrer"
-            target="_blank"
-            className="vertical-align-end"
-          >
-            <button className="btn">{buttonLabel}</button>
-          </a>
-        </div>
+        {buttonLabel && (
+          <div className="card-footer">
+            <a
+              href={url}
+              rel="noreferrer"
+              target="_blank"
+              className="vertical-align-end"
+            >
+              <button className="btn">{buttonLabel}</button>
+            </a>
+          </div>
+        )}
       </div>
     </div>
   );

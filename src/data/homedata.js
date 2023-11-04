@@ -11,6 +11,9 @@ import {
   firebase,
   mysql,
   nodejs,
+  css3,
+  spring,
+  mariadb,
 } from "../assets";
 
 import webDevAnimationData from "../lotties/web_development.json";
@@ -21,16 +24,16 @@ import programmingLanguagesAnimationData from "../lotties/programming_languages.
 export const whatIDo = {
   webDev: {
     label: "Web Technologies",
-    icons: {
-      Frontend: [
-        { src: html5, tooltip: "HTML5" },
-        { src: bootstrap, tooltip: "Bootstrap" },
-        { src: react, tooltip: "React" },
-        { src: redux, tooltip: "Redux" },
-      ],
-      Backend: [{ src: nodejs, tooltip: "Nodejs" }],
-    },
-    subLabels: ["Frontend", "Backend"],
+    icons: [
+      { src: html5, tooltip: "HTML" },
+      { src: css3, tooltip: "CSS" },
+      { src: bootstrap, tooltip: "Bootstrap" },
+      { src: react, tooltip: "React" },
+      { src: redux, tooltip: "Redux" },
+      { src: nodejs, tooltip: "Nodejs" },
+      { src: spring, tooltip: "Spring" },
+    ],
+    subLabels: null,
     animationData: webDevAnimationData,
   },
   appDev: {
@@ -45,6 +48,7 @@ export const whatIDo = {
       { src: mongodb, tooltip: "MongoDB" },
       { src: firebase, tooltip: "Firebase" },
       { src: mysql, tooltip: "MySQL" },
+      { src: mariadb, tooltip: "MariaDB" },
     ],
     subLabels: null,
     animationData: databaseAnimationData,

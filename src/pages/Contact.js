@@ -31,7 +31,7 @@ const Contact = () => {
         <div className="col-md-6" data-aos="zoom-in" data-aos-duration="1000">
           <div className="d-flex flex-column align-items-center title-container">
             <h3 className="display-5 font-weight-bold my-4 contact-title">
-              Always feel free to ask
+              Feel free to contact me
             </h3>
             <h5
               style={{ lineHeight: 1.5, textAlign: "justify" }}
@@ -63,7 +63,9 @@ const Contact = () => {
                 data-aos-duration="1000"
               >
                 <Icons src={address} size="40" tooltip="Address" />
-                <h5 className="mb-0 ml-3 lead">Jalgaon, Maharashtra</h5>
+                <h5 className="mb-0 ml-3 lead">
+                  Raleigh, North Carolina, United States
+                </h5>
               </div>
             </div>
           </div>
