@@ -4,7 +4,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #002f47;
+  /* background-color: #b9d0e9; */
   color: #fff;
+  /* color: #0e2239; */
   overflow-y: hidden;
   scrollbar-width: 5px;
   scrollbar-color: #00bfa6;

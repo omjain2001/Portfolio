@@ -1,4 +1,14 @@
-import { hackerrank, coursera, python, aws, crif } from "../assets";
+import {
+  hackerrank,
+  coursera,
+  python,
+  aws,
+  crif,
+  ncstate,
+  pict,
+  mjcollege,
+  teresa,
+} from "../assets";
 import { COLORS } from "../COLORS";
 
 export const educationList = [
@@ -6,25 +16,29 @@ export const educationList = [
     degree: "Master of Computer Science",
     university: "North Carolina State University",
     location: "Raleigh, NC, USA",
-    score: "-",
+    score: "GPA - 4.0/4.0",
+    logo: ncstate,
   },
   {
     degree: "Bachelor of Engineering - Information Technology",
     university: "Pune Institute of Computer Technology",
     location: "Pune, India",
-    score: "CGPA - 9.63",
+    score: "GPA - 9.63/10.00",
+    logo: pict,
   },
   {
     degree: "Higher Secondary Certificate (HSC)",
     university: "Swami Vivekanand junior college",
     location: "Jalgaon, India",
     score: "Score - 90.77%",
+    logo: mjcollege,
   },
   {
     degree: "Secondary School Certificate (SSC)",
     university: "St. Teresa’s Convent Higher Secondary School",
     location: "Jalgaon, India",
     score: "Score - 96.00%",
+    logo: teresa,
   },
 ];
 
@@ -39,7 +53,7 @@ export const achievementList = [
   // },
   {
     img: crif,
-    title: "Runner-Up: CRIF India Hackathon 2023",
+    title: "CRIF India Hackathon 2023",
     description:
       // "Designed a solution to detect the diseases of the crops with just a single image of the crop leaf. It was implemented using Image Classification model using Transfer Learning. Informing the user about plant disease outbreaks in the user's vicinity was an add-on feature.",
       "Devised a novel solution for the swift detection of crop diseases, which entails the analysis of a single image of a plant leaf. This solution was realized through the application of an Image Classification model, leveraging the principles of Transfer Learning. In addition, an auxiliary feature was integrated, enabling users to receive timely notifications regarding instances of plant disease outbreaks in their immediate geographic vicinity.",

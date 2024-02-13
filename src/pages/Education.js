@@ -11,13 +11,23 @@ import ScrollTop from "../components/ScrollTop";
 
 import { educationList, achievementList } from "../data/educationdata";
 
-const EducationCard = ({ degree, university, location, score }) => {
+const EducationCard = ({ degree, university, location, score, logo }) => {
   return (
     <div
       className="card custom-card w-75 custom-edu-card my-3"
       data-aos="fade-up"
       data-aos-duration="1000"
     >
+      {/* <div className="row" style={{ margin: 0 }}>
+        <div
+          className="col-3 d-flex align-items-center justify-content-center p-2"
+          style={{ backgroundColor: "#fff" }}
+        >
+          <img src={logo} width={"80%"}></img>
+        </div>
+        <div className="col-9 px-0">
+        </div>
+      </div> */}
       <div className="card-header text-center">
         <h5 className="card-title mb-0 font-weight-bold education-degree">
           {degree}
@@ -142,6 +152,7 @@ const Education = () => {
             location={item.location}
             score={item.score}
             key={index}
+            logo={item.logo}
           />
         ))}
       </div>

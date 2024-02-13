@@ -1,8 +1,11 @@
 // Logos
-export { default as cpp } from "./c.svg";
+export { default as c } from "./c.svg";
+export { default as cpp } from "./cpp.svg";
 export { default as java } from "./java.svg";
 export { default as python } from "./python.svg";
 export { default as javascript } from "./javascript.svg";
+export { default as sql } from "./sql.svg";
+export { default as jQuery } from "./jquery.svg";
 export { default as bootstrap } from "./bootstrap-4.svg";
 export { default as coursera } from "./coursera.svg";
 export { default as aws } from "./aws.svg";
@@ -23,9 +26,19 @@ export { default as mysql } from "./mysql.svg";
 export { default as mariadb } from "./mariadb.svg";
 export { default as nodejs } from "./nodejs.svg";
 export { default as react } from "./react.svg";
+export { default as reactNative } from "./react_native.svg";
 export { default as redux } from "./redux.svg";
 export { default as socketIo } from "./socket_io.svg";
 export { default as typescript } from "./typescript.svg";
+export { default as git } from "./git.svg";
+export { default as jenkins } from "./jenkins.svg";
+export { default as jira } from "./jira.svg";
+export { default as confluence } from "./confluence.svg";
+export { default as docker } from "./docker.svg";
+export { default as ncstate } from "./ncstate.png";
+export { default as pict } from "./pict.jpg";
+export { default as mjcollege } from "./mjcollege.png";
+export { default as teresa } from "./teresa.jpg";
 
 // Illustrations
 export { default as achievementSVG } from "./achievements.svg";
@@ -33,7 +46,7 @@ export { default as contactEnvelopSVG } from "./contactEnvelop.svg";
 export { default as experienceSVG } from "./experience.svg";
 export { default as graduationSVG } from "./graduation.svg";
 export { default as projectSVG } from "./project.svg";
-export { default as profileSVG } from "./profile.svg";
+export { default as profileSVG } from "./profile.png";
 
 // Projects
 export { default as chatAppImg } from "./chatApp.png";
